@@ -1,0 +1,14 @@
+.myNav{
+    font-size: 30px;
+    gap: 20px;
+  }
+  
+.logo{
+    position: relative;
+    font-size: 25px;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideRight 1s ease forwards ;
+    font-size: 35px;
+  }
+  
