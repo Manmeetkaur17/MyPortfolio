@@ -34,13 +34,17 @@
     </div>
   </nav>
   
-
+  <div class="heading">
+    <h2>Contact Me</h2>
+  </div>
+  
   <!-- Contact -->
-  <section class="contact" id="contact" style="margin-top: 66px;">
+  <section class="contact" id="contact" style="margin-top: 66px; position: relative;">
     <div class="max-width " >
-      <h2>Contact Me</h2>
+      
+
       <div class="contact-content ">
-        <div class="column left">
+        <div class="column left mydetails">
           <div class="icons ">
 
             <a href="#">
@@ -93,50 +97,41 @@
         </div>
 
         <br>
-        <!-- Reach -->
+
+        <div>
+          <form action="" class="contact-form">
+            <div class="input-control i-c-2">
+                <input type="text" placeholder="Your Name" id="name">
+                <input type="email" placeholder="Your Email" id="email">
+            </div>
+            <div class="input-control">
+                <input type="text" placeholder="Subject" id="subject">
+            </div>
+            <div class="input-control">
+                <textarea name="" id="message" cols="15" rows="8" placeholder="Message Here..."></textarea>
+            </div>
+            <div class="submit-btn">
+                <button class="main-btn" type="submit" id submit>
+                    <span class="btn-text">Submit</span>
+                    <span class="btn-icon"><i class="fas fa-paper-plane"></i></span>
+                </button>
+            </div>
+          </form>
+        </div>
         
-        <form class="row g-3 needs-validation" novalidate>
-          <div class="col-md-4 position-relative">
-            <label for="validationTooltip01" class="form-label">First name</label>
-            <input type="text" class="form-control" id="validationTooltip01" placeholder="First Name" required>
-            <div class="valid-tooltip">
-              Looks good!
-            </div>
-          </div>
-          <div class="col-md-4 position-relative">
-            <label for="validationTooltip02" class="form-label">Last name</label>
-            <input type="text" class="form-control" id="validationTooltip02" placeholder="Last Name" required>
-            <div class="valid-tooltip">
-              Looks good!
-            </div>
-          </div>
-          <div class="col-md-4 position-relative">
-            <label for="validationTooltipUsername" class="form-label">Username</label>
-            <div class="input-group has-validation">
-              <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
-              <input type="text" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" placeholder="Email" required>
-              <div class="invalid-tooltip">
-                Please choose a unique and valid username.
-              </div>
-            </div>
-          </div>
-          <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Write the message here..."></textarea>
-          </div>
-          <div class="col-12 submitbtn">
-            <button class="btn btn-primary" type="submit">Submit form</button>
-          </div>
-        </form>
+      </div>
+    </div>
+  </section>
   
-  
+ 
+
+              
 <script src='https://kit.fontawesome.com/3b57a2a2a7.js'></script>
 <script src='https://code.jquery.com/jquery-3.5.1.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script>
-
-    
 </body>
+<script src="contact.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </html>

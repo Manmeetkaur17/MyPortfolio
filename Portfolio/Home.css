@@ -11,6 +11,7 @@
     align-items: center;
     color: white; 
     margin-top: 56px;
+    position: relative;
 }
 
 .myNav{
