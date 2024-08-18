@@ -3,11 +3,12 @@
   gap: 20px;
 }
 
-
 .logo{
   position: relative;
-  font-size: 25px;
   font-weight: 600;
+  opacity: 1;
+  font-size: 35px;
+  animation: slideRight 1s ease forwards ;
 }
 
 #heading{
@@ -52,22 +53,13 @@ body{
   animation: fadeInUp 1s ease-in-out forwards;
 }
 
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px); 
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 
 /* Education section */
-.education{
-  height: 100vh;
+#education{
+  margin: 30px;
 }
+
+
 .accordion-button {
   background-color: #f8f9fa;
   border: none;
@@ -132,6 +124,7 @@ body{
     text-transform: uppercase;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     position: relative;
+    animation: pulse 2s ease forwards infinite;
   }
   
 .allheadings::after {
@@ -145,6 +138,17 @@ body{
     transform: translateX(-50%);
   } 
 
+
+  footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  
+
+
+
 @keyframes pulse {
   0% {
     transform: scale(1);
@@ -155,6 +159,28 @@ body{
   100% {
     transform: scale(1); 
 
+  }
+};
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+};
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px); 
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 };
 
